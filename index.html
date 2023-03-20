@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>javascript handson 7</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <p>Que1: Create a Function</p>
+
+    <fieldset>
+      <pre>
+Ans:
+
+function Check(obj1){
+   obj1.setter = function(){
+    console.log(this.name);
+  }
+}
+</pre
+      >
+    </fieldset>
+
+    <p>Que2: Delete a Parameter</p>
+    <fieldset>
+      <pre>
+Ans:
+
+function Check(obj1) {
+  return delete obj1.rollno;
+}
+    </fieldset>
+    <p>Que3: Check whether the Package is Dream Package or not</p>
+    <fieldset>
+      <pre>
+Ans:
+
+function Check(obj1) {
+    if(obj1.salary > 500000){
+      return "Dream";
+    }
+    else {
+      return "NotDream";
+    }
+}
+    </pre
+      >
+    </fieldset>
+    <p>Que4: Check whether the Object has a parameter or not</p>
+    <fieldset>
+      <pre>
+Ans:
+
+function Check(obj1) {
+  if(Object.entries(obj1).length === 0) {return "false";}
+  return "true";
+}
+    </pre
+      >
+    </fieldset>
+    <p>Que5: Merge the Objects</p>
+    <fieldset>
+      <pre>
+Ans:
+
+function Check(obj1,obj2) {
+    let obj3 = Object.assign({}, obj1, obj2);
+    return obj3;
+}
+    </pre
+      >
+    </fieldset>
+    <p>Que6: Object Multiplyer</p>
+    <fieldset>
+      <pre>
+Ans:
+
+function Check(a,obj1) {
+  obj1.id = Number(obj1.id*a);
+  obj1.houseno = Number(obj1.houseno*a);
+  return obj1;
+}
+</pre
+      >
+    </fieldset>
+    <p>Que7: Find the  sum of Object Members</p>
+    <fieldset>
+      <pre>
+Ans:
+
+function Check(obj1) {
+    return Number(obj1.p1)+Number(obj1.p2)+Number(obj1.p3);
+}
+    </pre
+      >
+    </fieldset>
+    <p>Que8: Check whether the Objects are same or not.</p>
+    <fieldset>
+      <pre>
+Ans:
+
+function check(obj1,a,b) {
+    if(obj1.name === a && obj1.id === b){
+      return "true";
+    }
+    return "false";
+}
+    </pre
+      >
+    </fieldset>
+  </body>
+</html>
